@@ -1,0 +1,723 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #222;
+
+    background-image: url("IMAGES/fon.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* =========================================
+   ОБЩАЯ ШИРИНА
+   ========================================= */
+
+.content-width {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   ШАПКА
+   ========================================= */
+
+.site-header {
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border-bottom: 2px solid #667E4A;
+}
+
+.header-inner {
+    min-height: 170px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 0;
+}
+
+
+/* =========================================
+   ЛОГОТИП
+   ========================================= */
+
+.header-image-wrapper {
+    flex: 0 0 auto;
+
+    width: 150px;
+    height: 120px;
+
+    overflow: hidden;
+}
+
+.header-bg-img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   НАЗВАНИЕ
+   ========================================= */
+
+.header-text-group {
+    flex: 0 1 auto;
+
+    text-align: center;
+}
+
+.header-title {
+    margin: 0;
+
+    color: #445533;
+
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+
+    text-align: center;
+
+    text-shadow:
+        0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+
+/* =========================================
+   МЕНЮ
+   ========================================= */
+
+.site-nav {
+    width: 100%;
+
+    background: #667E4A;
+}
+
+.nav-inner {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.site-nav a {
+    display: block;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    background: #53663b;
+}
+
+
+/* =========================================
+   ОСНОВНОЙ КОНТЕНТ
+   ========================================= */
+
+main.container {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding-left: 12px;
+    padding-right: 12px;
+
+    background: rgba(255, 255, 255, 0.86);
+
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: #445533;
+
+    font-size: 25px;
+}
+
+
+/* =========================================
+   ССЫЛКИ
+   ========================================= */
+
+.links-list {
+    margin: 0;
+
+    padding-left: 28px;
+}
+
+.links-list li {
+    margin: 6px 0;
+    padding: 0;
+}
+
+.links-list p {
+    margin: 0;
+    padding: 0;
+}
+
+.links-list a {
+    font-size: 16px;
+}
+
+a {
+    color: #667E4A;
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.links-list img {
+    display: block;
+
+    max-width: 300px;
+
+    height: auto;
+
+    vertical-align: middle;
+}
+
+.no-href {
+    cursor: default;
+}
+
+.no-href:hover {
+    color: #cc0000;
+}
+
+
+/* =========================================
+   КАРТА ССЫЛОК
+   ========================================= */
+
+.image-map {
+    position: relative;
+
+    display: inline-block;
+
+    max-width: 100%;
+
+    margin-top: 5px;
+}
+
+.image-map img {
+    display: block;
+
+    max-width: 480px;
+
+    width: 100%;
+    height: auto;
+}
+
+.applicant-link {
+    position: absolute;
+
+    top: 0;
+    left: 16.67%;
+
+    width: 66.67%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    z-index: 10;
+}
+
+
+/* =========================================
+   ТАБЛИЦА
+   ========================================= */
+
+.table-section {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.table-section h2 {
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+
+    min-width: 700px;
+
+    border-collapse: collapse;
+
+    background: #ffffff;
+
+    border: 2px solid #667E4A;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+caption {
+    caption-side: top;
+
+    padding: 0;
+
+    color: #445533;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: left;
+}
+
+th,
+td {
+    padding: 0.5rem;
+
+    border: 1px solid #b8c5a9;
+
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+thead tr:first-child th {
+    background: #355E3B;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+thead tr:nth-child(2) th {
+    background: #527A52;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+tbody td:first-child {
+    width: 60px;
+
+    font-weight: bold;
+
+    color: #445533;
+}
+
+tbody td:nth-child(2) {
+    text-align: left;
+
+    font-weight: 500;
+}
+
+tbody td:nth-child(3) {
+    width: 90px;
+}
+
+tbody td:nth-child(4) {
+    width: 100px;
+}
+
+tbody td:nth-child(5) {
+    width: 150px;
+}
+
+tbody tr:nth-child(odd) {
+    background: #eef5ea;
+}
+
+tbody tr:nth-child(even) {
+    background: #ffffff;
+}
+
+tbody tr:hover {
+    background: #dcebd5;
+}
+
+tbody td {
+    color: #333333;
+}
+
+
+/* =========================================
+   ФОРМА
+   ========================================= */
+
+#myForm {
+    margin-top: 0;
+}
+
+#myForm > p {
+    display: block;
+
+    margin: 18px 0;
+}
+
+#myForm > p > label {
+    display: flex;
+
+    align-items: center;
+
+    width: auto;
+
+    min-width: 0;
+
+    margin-bottom: 5px;
+
+    font-size: 16px;
+}
+
+#myForm input[type="text"],
+#myForm input[type="tel"],
+#myForm input[type="email"] {
+    width: 100%;
+
+    height: 46px;
+
+    padding: 8px 12px;
+
+    margin: 0;
+
+    border: 1px solid #999;
+
+    border-radius: 6px;
+
+    font: inherit;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+#myForm input[type="date"] {
+    width: 180px;
+
+    height: 46px;
+
+    padding: 8px 12px;
+
+    margin-left: 0;
+
+    border: 1px solid #999;
+
+    border-radius: 6px;
+
+    font: inherit;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+#myForm input[type="text"]:focus,
+#myForm input[type="tel"]:focus,
+#myForm input[type="email"]:focus,
+#myForm input[type="date"]:focus,
+#myForm textarea:focus {
+    outline: none;
+
+    border-color: #667E4A;
+
+    box-shadow:
+        0 0 0 2px rgba(102, 126, 74, 0.15);
+}
+
+
+/* =========================================
+   RADIO И CHECKBOX
+   ========================================= */
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+
+/* =========================================
+   FIELDSET
+   ========================================= */
+
+fieldset {
+    margin: 20px 0;
+
+    padding: 15px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.25);
+}
+
+fieldset legend {
+    padding: 0 5px;
+
+    color: #333;
+
+    font-size: 18px;
+}
+
+fieldset label {
+    display: inline-block;
+
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   TEXTAREA
+   ========================================= */
+
+#myForm textarea {
+    display: block;
+
+    width: 100%;
+
+    min-height: 180px;
+
+    padding: 10px;
+
+    margin-top: 5px;
+
+    border: 1px solid #999;
+
+    border-radius: 6px;
+
+    font: inherit;
+
+    resize: vertical;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   КНОПКА
+   ========================================= */
+
+#myForm button {
+    padding: 10px 22px;
+
+    border: 1px solid #667E4A;
+
+    border-radius: 5px;
+
+    background: #667E4A;
+
+    color: #ffffff;
+
+    font: inherit;
+
+    cursor: pointer;
+}
+
+#myForm button:hover {
+    background: #53663b;
+}
+
+
+/* =========================================
+   СООБЩЕНИЕ
+   ========================================= */
+
+.message {
+    display: none;
+
+    margin-top: 15px;
+
+    padding: 12px 15px;
+
+    border-radius: 6px;
+
+    background: #e7efdf;
+
+    color: #445533;
+
+    font-weight: bold;
+}
+
+.message-visible {
+    display: block;
+}
+
+
+/* =========================================
+   НАВЕРХ
+   ========================================= */
+
+.back-to-top {
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   ПОДВАЛ
+   ========================================= */
+
+.site-footer {
+    width: 100%;
+
+    background: #445533;
+
+    color: #ffffff;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+
+/* =========================================
+   MOBILE FIRST
+   ========================================= */
+
+/*
+   Сначала стили для мобильных устройств.
+   Затем при ширине от 768px
+   применяются стили для компьютера.
+*/
+
+@media (min-width: 768px) {
+
+    .header-inner {
+        flex-direction: row;
+
+        gap: 80px;
+    }
+
+    .header-image-wrapper {
+        flex: 0 0 180px;
+
+        width: 180px;
+        height: 140px;
+    }
+
+    .header-title {
+        font-size: 24px;
+    }
+
+    .nav-inner {
+        flex-direction: row;
+    }
+
+    .site-nav a {
+        width: auto;
+
+        text-align: left;
+    }
+
+    table {
+        min-width: 0;
+    }
+
+    th,
+    td {
+        padding: 12px 14px;
+    }
+
+    thead tr:first-child th {
+        font-size: 16px;
+    }
+
+    thead tr:nth-child(2) th {
+        font-size: 15px;
+    }
+
+    #myForm > p {
+        display: flex;
+
+        align-items: center;
+    }
+
+    #myForm > p > label {
+        width: 135px;
+
+        min-width: 135px;
+
+        margin-bottom: 0;
+    }
+
+    #myForm input[type="text"],
+    #myForm input[type="tel"],
+    #myForm input[type="email"] {
+        width: 330px;
+    }
+
+    #myForm input[type="date"] {
+        width: 165px;
+    }
+
+    fieldset label {
+        margin-right: 15px;
+    }
+
+    main.container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
